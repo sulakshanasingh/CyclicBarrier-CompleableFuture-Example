@@ -29,7 +29,7 @@ public class AsynchronousApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		//STEP1: Load employee dataset
-		String csvPath ="C:\\Users\\rsula\\project\\asynchronous\\src\\main\\resources\\employee.csv";
+		String csvPath ="C:\\Users\\project\\asynchronous\\src\\main\\resources\\employee.csv";
 
 		List<Employee> employeeList = new CsvToBeanBuilder<Employee>(new FileReader(csvPath))
 				.withType(Employee.class)
